@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+{# 
+Show a list of all customers, ordered by last name and first name.
+
+Clicking on each customer in the list should take you to a page to view the customer record in detail.
+#}
+
+<!DOCTYPE html>
+<html>
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>CRM</title>
+	</head>
+<body>
+
+<div class="container-fluid">
+  <!-- List all the recipes that have been 'passed in' to this template's context.
+    Also show a button ,to add a new recipe, in an appropriate part of the page. -->
+	<ul class="list-group">
+		<!--- ASk Yair if this can be done more efficiently--->
+		<li class="list-group-item"> Customer: {{ customers.first_name }} <a href="" class="btn btn-info"> Open </a> </li>
+	</ul>
+</div>
+<div>
+
+</body>
+</html>
+
+
+
+
+
+{% endblock %}
